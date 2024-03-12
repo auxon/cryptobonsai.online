@@ -17,4 +17,6 @@ describe('bitwork operations', () => {
   bit.on("tx", (tx) => {
     console.log('bitwork tx', tx)
   })
+  while(running) {
+  }
 });
