@@ -1,5 +1,8 @@
 const bitwork = require('bitwork')
 const bit = new bitwork({ rpc: { user: "root", pass: "nfhRO+3[" } })
+
+
+
 describe('bitwork operations', () => {
   bit.on("ready", () => {
     // YOUR LOGIC
@@ -17,6 +20,6 @@ describe('bitwork operations', () => {
   bit.on("tx", (tx) => {
     console.log('bitwork tx', tx)
   })
-  while(running) {
+  while(true) {
   }
 });
